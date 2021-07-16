@@ -12,6 +12,7 @@ html,body {
   background-color: white;
   width:  100vw;
   height: 76px;
+  padding-right: 10px;
 }
 
 /* Style the links inside the navigation bar */
