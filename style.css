@@ -1,0 +1,218 @@
+*{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Otomanopee One', sans-serif;
+  font-size: 1rem;
+
+  }
+html,body {
+    height: 100vh;
+    padding: 0;
+}
+.topnav {
+  background-color: white;
+  width:  100vw;
+  height: 76px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: flex;
+  color: black;
+  text-align: center;
+  align-items: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+    min-height: 76px;
+}
+#logo {
+  float: left;
+  padding: 0;
+  margin: 0
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+.main {
+  position: absolute;
+  top: 0;
+  margin-top: 76px;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+
+}
+.left {
+  left: 0;
+  width: 33vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color:#e8e1df;
+}
+
+.left h1 {
+  height: 40vh;
+  padding-top: 50px;
+  padding-right:50px ;
+  padding-left: 50px;
+  text-align: right;
+
+}
+.left img {
+  position: absolute;
+  bottom:  0;
+  left: 0;
+  width: 20vw;
+}
+
+.right{
+
+  width: 67vw ;
+  background-color: #fbac44;
+  overflow-y: scroll; 
+  overflow-x: hidden;
+ 
+  text-align: left;
+  }
+
+.right .r1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  height: 50%;
+  padding: 50px;
+  
+
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+}
+a{
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+}
+li {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 3rem;
+}
+li img {
+  height:  100%;
+  margin-right: 10px;
+}
+ .right .r2 {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+ 
+  min-height: 5%;
+  padding: 20px;
+ }
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  float:  center;
+}
+
+.content {
+  border-top-width: 2px;
+  border-style: green;
+  padding: 50px;
+}
+
+.content h1 {
+  border-width: 0 5 0 0;
+}
+
+.article {
+  width: 100%;
+  padding-left: 30px;
+  min-height: 30%;
+  text-align: left;
+}
+.footer {
+  
+  height: 5vh;
+  width: 67vw;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: flex;
+    align-items: center;
+
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: black;
+  }
+  .left {
+    display: none;
+    width: 0vw;
+  }
+  .right {
+    width: 100vw;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  .footer{
+    width: 100vw;
+    text-align: center;
+    padding: 20px;
+    padding-top:  50px;
+  }
+}
